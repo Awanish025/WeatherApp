@@ -32,12 +32,16 @@
                 </div>
 
                 <!-- Search Form -->
-                <form class="form-container flex flex-col sm:flex-row items-center justify-center gap-4 hidden w-full mt-5" data-searchForm>
-                    <input type="text" class="shadow-md rounded-md border border-cyan-800 p-3 w-full sm:w-3/4 text-sm" placeholder="Search For City.." data-searchInput>
-                    <button class="btn bg-white rounded-full h-10 w-10 flex items-center justify-center" type="submit">
-                        <img src="/assets/icons8-search-48.png" class="w-5 h-5">
-                    </button>
-                </form>
+                <form class="form-container flex items-center justify-center gap-4 w-full mt-5 hidden" data-searchForm>
+                  <!-- ✅ CHANGED: The input will adjust its width based on screen size -->
+                  <input type="text" class="shadow-sm rounded-2xl shadow-green-200 border-cyan-800 font-mullish font-normal p-3 pb-4 w-full sm:w-[300px] lg:w-[370px] h-9 text-center" placeholder="Search For City.." data-searchInput>
+                  
+                  <!-- ✅ CHANGED: The button is responsive and adjusted width on smaller screens -->
+                  <button class="btn border-cyan-800 bg-white rounded-full h-9 w-9 sm:h-10 sm:w-10 flex items-center justify-center" type="submit">
+                      <img src="/assets/icons8-search-48.png" width="20" height="20" loading="lazy">
+                  </button>
+              </form>
+              
 
                 <!-- Loading Container -->
                 <div class="loading-container flex flex-col items-center justify-center hidden">
